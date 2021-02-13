@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">Login</string>
+    <string name="user">Enter username</string>
+    <string name="pass">Enter password</string>
+    <string name="sgn">Sign In</string>
+    <string name="reg">Register</string>
+    <string name="robot_desc">This is a picture of a robot</string>
+
+
+</resources>
