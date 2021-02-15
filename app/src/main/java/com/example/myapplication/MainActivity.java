@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                                 .setAction("Action", null).show();
                         }
                             else{
-                            Snackbar.make(v, "The fields is empty!", Snackbar.LENGTH_LONG)
+                            Snackbar.make(v, "The fields are empty!", Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             }
             }
