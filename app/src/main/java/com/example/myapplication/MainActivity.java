@@ -37,21 +37,29 @@ public class MainActivity extends AppCompatActivity {
         btnSgn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (inputUser.getText().toString().matches("") | inputPass.getText().toString().matches("")) {
-                    Snackbar.make(v, "The fields are empty, bitch!", Snackbar.LENGTH_LONG)
+                if (!inputUser.getText().toString().matches("") & !inputPass.getText().toString().matches("")) {
+                    Intent intent_sgn = new Intent(MainActivity.this, SuccessActivity.class);
+                    startActivity(intent_sgn);
+                } else if (inputUser.getText().toString().matches("") & !inputPass.getText().toString().matches("")) {
+                            Snackbar.make(v, "The username field is empty!", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
-                } else {
-                    Intent intent = new Intent(MainActivity.this, SuccessActivity.class);
-                    startActivity(intent);
-                }
+                        }
+                        else if (inputPass.getText().toString().matches("") & !inputUser.getText().toString().matches("")){
+                            Snackbar.make(v, "The password field is empty!", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                        }
+                            else{
+                            Snackbar.make(v, "The fields is empty!", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                            }
             }
         });
 
         btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "You are registering...", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent_reg = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intent_reg);
             }
         });
     }

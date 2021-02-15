@@ -5,6 +5,9 @@
     <string name="pass">Password</string>
     <string name="sgn">Sign In</string>
     <string name="reg">Register</string>
+    <string name="user_empty">The username field is empty!</string>
+    <string name="pass_empty">The password field is empty!</string>
+
 
     <string name="email">e-mail</string>
     <string name="repeat">Repeat password</string>
