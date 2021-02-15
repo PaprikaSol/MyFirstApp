@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="login">Login</string>
-    <string name="user">Enter username</string>
-    <string name="pass">Enter password</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
     <string name="sgn">Sign In</string>
     <string name="reg">Register</string>
+
+    <string name="email">e-mail</string>
+    <string name="repeat">Repeat password</string>
+    <string name="new_user">New user</string>
+    <string name="ok">Submit</string>
+
     <string name="robot_desc">This is a picture of a robot</string>
 
 
